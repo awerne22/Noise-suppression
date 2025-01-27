@@ -64,11 +64,17 @@ def main(input_file: str, output_file: str) -> None:
         None
     """
     # Load SepFormer model
-    model = SepformerSeparation.from_hparams(
-        source="speechbrain/sepformer-dns4-16k-enhancement",
-        savedir="sepformer-dns4-16k-enhancement",
-        run_opts={"device":"cuda"}
-    )
+    try:
+        model = SepformerSeparation.from_hparams(
+            source="speechbrain/sepformer-dns4-16k-enhancement",
+            savedir="sepformer-dns4-16k-enhancement",
+            run_opts={"device":"cuda"}
+        )
+    except:
+         model = SepformerSeparation.from_hparams(
+            source="speechbrain/sepformer-dns4-16k-enhancement",
+            savedir="sepformer-dns4-16k-enhancement",
+        )
 
     # Load the noisy audio file
     noisy_audio, sr = torchaudio.load(input_file)
