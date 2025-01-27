@@ -46,10 +46,5 @@ input_audio.wav: A noisy sample audio file.
 output_audio_1.wav: Denoised output using DeepFilterNet.
 output_audio_2.wav: Denoised output using SepFormer.
 ```
-#License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-# References
-DeepFilterNet GitHub
-SepFormer Paper
 
