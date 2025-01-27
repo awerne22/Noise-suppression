@@ -24,7 +24,7 @@ pip install -r requirements.txt
 # Usage
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/noise-suppression.git
+git clone https://github.com/awerne22/noise-suppression.git
 cd noise-suppression
 ```
 3. Run the noise suppression models:
